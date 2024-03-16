@@ -33,4 +33,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 The source of backend for this on https://github.com/dorjear/book-library-be
 
 ## Authentication
-This is the simple without authentication. The version with Oauth2 authentication is on branch feature/oauth2-demo
+This is the with oauth2 authentication.
+
+The backend setup please switch to the feature branch of feature/oauth2-demo on the backend repository.
+The sample logon user is `user` and password `secret` 
+
+To make this working the auth server need to be run first. The source code of the auth server is available at https://github.com/dorjear/oauth2-auth-server.
+
+The error handling is limited at this version. Logout and refresh token is not implemented yet. 
+
+The following could be considered when time allowed:
+1. Logout 
+2. Refresh token 
+3. Different error handling on different status returning from API
+4. Role based access control
+5. Showing login user information
